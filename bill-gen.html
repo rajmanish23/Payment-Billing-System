@@ -4,6 +4,25 @@
         <title>Bill Generator</title>
     </head>
     <body>
-        
+        <div class="headerSection">
+            <p>Invoice Entry</p>
+            <p id="billNum">Bill Number : </p>
+        </div>
+        <div class="custInfo">
+            <form action=""> <!-- add JS function to get details -->
+                <label for="custName">Customer Name : </label>
+                <input type="text" id="custName" name="custName">
+                <label for="custPhNum">Customer Phone Number : </label>
+                <input type="number" id="custPhNum" name="custPhNum">
+            </form>
+        </div>
+        <div class="billDetails">
+            <div id="billDetailsDiv"></div>
+            <button id="addBillItem">Add</button>
+        </div>
+        <div class="footerSection">
+            <p id="billTotal">Total Bill : </p>
+            <button id="submitDetails">Proceed</button>
+        </div>
     </body>
 </html>
