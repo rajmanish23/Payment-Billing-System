@@ -2,26 +2,44 @@
 <html lang="en">
     <head>
         <title>Bill Generator</title>
+        <script src="/scripts/bill-gen.js" defer></script>
+        <link rel="stylesheet" href="/styles/bill-gen.css">
     </head>
     <body>
+        
         <div class="headerSection">
             <p>Invoice Entry</p>
-            <p id="billNum">Bill Number : </p>
+            <p id="billNum">Bill Number </p>
         </div>
+        
+        <!-- gets customer information -->
         <div class="custInfo">
             <form action=""> <!-- add JS function to get details -->
-                <label for="custName">Customer Name : </label>
+                <label for="custName">Customer Name </label>
                 <input type="text" id="custName" name="custName">
-                <label for="custPhNum">Customer Phone Number : </label>
+                <label for="custPhNum">Customer Phone Number </label>
                 <input type="number" id="custPhNum" name="custPhNum">
             </form>
         </div>
+        
+        <!-- adding items to bill -->
         <div class="billDetails">
-            <div id="billDetailsDiv"></div>
+            <form id="innerBillDetails">
+                <div class="innerBillElement">
+                    <label for="itemId">Item Code </label>
+                    <input type="number" id="itemId" name="itemId">
+                    <div id="itemName"></div> <!-- JS function fetches item name from item code and puts it here -->
+                    <label for="itemPrice"> Price </label>
+                    <input type="number" id="itemPrice" name="itemPrice">
+                    <label for="itemQty">Quantity </label>
+                    <input type="number" id="itemQty" name="itemQty">
+                </div>
+            </form>
             <button id="addBillItem">Add</button>
         </div>
+        
         <div class="footerSection">
-            <p id="billTotal">Total Bill : </p>
+            <p id="billTotal">Total Bill </p>
             <button id="submitDetails">Proceed</button>
         </div>
     </body>
