@@ -1,13 +1,16 @@
-body{
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+body {
     margin: 0;
     padding: 0;
-    background: url("/assets/biller.jpg") ;
+    background: url("/assets/biller.jpg");
     background-size: cover;
     backface-visibility: visible;
     background-position: center;
     font-size: sans-serif;
 }
-.inbox{
+
+.inbox {
     width: 320px;
     height: 420px;
     background: #000;
@@ -15,11 +18,12 @@ body{
     top: 50%;
     left: 50%;
     position: absolute;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
     box-sizing: border-box;
     padding: 70px 30px;
 }
-.avatar{
+
+.avatar {
     width: 100px;
     height: 100px;
     border-radius: 60%;
@@ -27,23 +31,29 @@ body{
     top: -80px;
     left: calc(50% - 50px);
 }
-h1{
+
+h1 {
     margin: 0;
     padding: 0 0 20px;
     text-align: center;
     font-size: 22px;
+    font-family: 'Lato', sans-serif;
 }
-.inbox p{
+
+.inbox p {
     margin: 0;
     padding: 0;
-    font-weight: bold; 
+    font-weight: bold;
+    font-family: 'Lato', sans-serif;
 }
-.inbox input{
+
+.inbox input {
     width: 100%;
     margin-bottom: 20px;
 }
-.inbox input[type="text"], input[type="password"]
-{
+
+.inbox input[type="text"],
+input[type="password"] {
     border: none;
     border-bottom: 1px solid #fff;
     background: transparent;
@@ -52,7 +62,8 @@ h1{
     color: #fff;
     font-size: 16px;
 }
-.inbox input[type="submit"]{
+
+.inbox input[type="submit"] {
     border: none;
     outline: none;
     height: 40px;
@@ -61,21 +72,25 @@ h1{
     font-size: 18px;
     border-radius: 20px;
 }
-.inbox input[type="submit"]:hover{
+
+.inbox input[type="submit"]:hover {
     cursor: pointer;
     background: darkgreen;
     color: #000;
 }
-.inbox a{
+
+.inbox a {
     text-decoration: none;
     font-size: 12px;
     line-height: 20px;
-    color: rgb(80, 80, 245);
+    color: rgb(0, 139, 100);
 }
-.inbox a:hover{
-    color: darkblue;
+
+.inbox a:hover {
+    color: rgb(5, 56, 38);
 }
-.button{
+
+.button {
     border: none;
     outline: none;
     height: 40px;
@@ -85,14 +100,33 @@ h1{
     border-radius: 20px;
     width: 265px;
 }
-.head{
+
+.head {
     color: black;
-    left: 44%;
-    position: absolute;
-    font-family: cursive;
-    font-size: 200%;
+    /* left: 44%; */
+    bottom: 30%;
+    height: 100px;
+    /* width: 320px; */
+    position: relative;
+    font-family: Montserrat, sans-serif;
+    font-size: 300%;
+    background-color: #fff;
+    padding-top: 1px;
+    padding-bottom: 35px;
 }
-.button:hover{
+
+.head p {
+    /* text-align: center; */
+    padding-top: 0.04%;
+    padding-left: 42%;
+
+    /* paddtransform: translate(-50%, -50%); */
+
+    /* padding-bottom: 12%; */
+    /* position: absolute; */
+}
+
+.button:hover {
     cursor: pointer;
     background: darkgreen;
     color: #000;
