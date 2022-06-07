@@ -11,6 +11,7 @@ document.getElementById("addBillItem").addEventListener("click", function () {
             <label for="itemQty">Quantity </label>
             <input type="number" id="itemQty" name="itemQty">
         </div>
+        <br>
     `
 });
 

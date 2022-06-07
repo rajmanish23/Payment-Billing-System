@@ -33,3 +33,6 @@ body {
     background-color: #CC3D38;
     padding: 0.5%;
 }
+.addBillItem{
+    position: absolute;
+}
