@@ -6,25 +6,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login - Bill System</title>
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="/styles/index.css">
     <script src="assets/bootstrap/js/bootstrap.bundle.js" defer></script>    
 </head>
 
 <body>
-    <div class="container-fluid border">BILLER ZONE</div>
-    <div class="container border">
-        <img src="/assets/avatar.jpg" class="avatar">
+    <div class="container-fluid">BILLER BEE</div>
+    <div class="container">
+        <img src="/assets/avatar.png" class="avatar">
         <h1>Enter Credentials</h1>
-        <form action="homepage.html">
-            <p>Username</p>
-            <input type="text" name="" placeholder="Enter Username">
-            <p>Password</p>
-            <input type="password" name="" placeholder="Enter Password">
-            <input type="submit" name="" value="Login">
-            <p>If doesn't have account please click here:</p>
-            <a href="#">Register</a>
+        <br>
+        <form action="">
+            <div class="username-box">
+                <label for="username">Username : </label>
+                <input type="text" name="username" id="username">
+            </div>
+            <div class="password-box">
+                <label for="password">Password : </label>
+                <input type="password" name="password" id="password">
+            </div>
         </form>
-        <a href="regpag.html"><button class="button">Register</button></a><br>
-        <a href="regpag.html">Forgot Password</a><br>
+        <br>
+        <div class="d-grid gap-2 col-10 mx-auto">
+            <button type="button" class="btn btn-primary">Login</button>
+            <br>
+            <button type="button" class="btn btn-primary">Register</button>
+        </div>
+        <br>
+        <a href="regpag.html">Forgot Password</a>
+        <br><br>
     </div>
 
 </body>
