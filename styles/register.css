@@ -34,23 +34,24 @@ body {
     margin-bottom: 5%;
 }
 
+
 .container label {
     margin-right: 1%;
 }
 
-.password-box input, .username-box input {
+.password-box input, .username-box input, .compname-box input, .compPhoneNum-box input, .compAddress-box input{
     border: none;
     border-bottom: 1px solid rgb(179, 179, 179);
     background: transparent;
     outline: none;
-    /* outline-color: gray; */
     height: 40px;
     width: auto;
     color: white;
     font-size: 16px;
 }
 
-.username-box, .password-box {
+
+.username-box, .password-box, .compname-box, .compPhoneNum-box, .compAddress-box {
     width: auto;
     margin-left: 8%;
     margin-right: 8%;
@@ -60,6 +61,7 @@ body {
     background-color: #3282B8;
     border-radius: 20px;
 }
+
 
 .btn {
     font-size: large;

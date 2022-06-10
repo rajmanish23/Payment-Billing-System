@@ -1,38 +1,19 @@
 body {
-    background-color: azure;
-    padding: 0px;
+    background-color: #b3bec5;
 }
 
-.headerSection {
-    background-color: #CC3D38;
-    margin: 0%;
-    text-align: center;
-    padding: 0.5%;
-    border-radius: 0cm;
+.container-fluid {
+    margin-bottom: 100px;
+    background-color: #0F4C75;
+    padding: 1.5%;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
 }
 
-.custInfo {
-    text-align: end;
-    margin: 1%;
+.container-fluid img {
+    height: 100px;
 }
 
-.billDetails {
-    text-align: center;
-    
-}
-
-#innerBillDetails {
-    padding: 5%;
-}
-.innerBillDetails {
-    margin: 5%;
-    padding: 1%;
-}
-
-.footerSection {
-    background-color: #CC3D38;
-    padding: 0.5%;
-}
-.addBillItem{
-    position: absolute;
+#header {
+    text-align: right;
 }

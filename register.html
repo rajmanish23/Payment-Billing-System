@@ -4,9 +4,50 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width='device-width', initial-scale=1.0">
+    <link rel="stylesheet" href="/assets/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="/styles/register.css">
+    <script src="/assets/bootstrap/js/bootstrap.bundle.js"></script>
     <title>Register - Biller Bee</title>
 </head>
 <body>
-    
+    <div class="container-fluid">
+        <img src="/assets/logo.png" alt="Biller Bee Logo">
+    </div>
+    <div class="container">
+        <img src="/assets/avatar.png" class="avatar">
+        <h1>Enter Credentials</h1>
+        <br><br>
+        <form action="">
+            <div class="username-box">
+                <label for="username">Username : </label>
+                <input type="text" name="username" id="username">
+            </div>
+            <div class="password-box">
+                <label for="password">Password : </label>
+                <input type="password" name="password" id="password">
+            </div>
+            <div class="compname-box">
+                <label for="compname">Company Name : </label>
+                <input type="text" name="compname" id="compname">
+            </div>
+            <div class="compPhoneNum-box">
+                <label for="comptel">Phone Number : </label>
+                <input type="tel" name="phon no." pattern="[1-9]{1}[0-9]{9}" id="comptel">
+            </div>
+            <div class="compAddress-box">
+                <label for="addressLine1">Address Line 1 : </label>
+                <input type="text" name="addressLine1" id="addressLine1">
+            </div>
+            <div class="compAddress-box">
+                <label for="addressLine2">Address Line 2 : </label>
+                <input type="text" name="addressLine2" id="addressLine2">
+            </div>
+        </form>
+        <br>
+        <div class="d-grid gap-2 col-10 mx-auto">
+            <button type="button" class="btn btn-primary" onclick="window.location.href='register.html'">Register</button>
+        </div>
+        <br><br>
+    </div>
 </body>
 </html>
