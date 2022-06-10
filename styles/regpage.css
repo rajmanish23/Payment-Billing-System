@@ -1,0 +1,16 @@
+.reg{
+    text-align: center;
+    margin-top: 300px;
+    font-size: 30px;
+}
+.back{
+    width: 400px;
+    height: 600px;
+    margin: auto;
+    background-color: lightblue;
+    color: white;
+}
+body{
+    background-color: black;
+    
+}

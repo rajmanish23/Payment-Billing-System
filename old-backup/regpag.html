@@ -1,24 +1,38 @@
+<!DOCTYPE html>
 <html>
+
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registration</title>
+  <link rel="stylesheet" href="/styles/regpage.css">
+</head>
+
 <body>
-  <form algin="center">
+  <div class="back">
+  <form class="reg" algin="center">
     
     
-    <label>user name</label>
-    <input type="text" name="username"     placeholder="user name pls"><br><br>
+    <label for="username">user name</label>
+    <input type="text" name="username" id="username" placeholder="user name pls"><br><br>
+    
+    <label for="password">password</label>
+    <input type="password" name="password" id="password"><br><br>
+    
+    
+    <label for="compname">company name</label>
+    <input type="text" name="compname" id="compname"><br><br>
 
-    <label>password</label>
-    <input type="password" name="password"><br><br>
+    <label for="compaddress">company address</label>
+    <textarea name="comp address" id="compaddress" row="40" col="60"></textarea><br><br>
+    
 
-
-    <label>company name</label>
-    <input type="text" name="compname" ><br><br>
-
-    <label>company address</label>
-    <textarea name="comp address" row="40" col="60"></textarea><br><br>
-
-
-    <label>enter company phone number</label>
-    <input type="tel" name="phon no." pattern="[1-9]{1}[0-9]{9}"><br><br>
+    <label for="comptel">enter company phone number</label>
+    <input type="tel" name="phon no." pattern="[1-9]{1}[0-9]{9}" id="comptel"><br><br>
+  </form>
+  </div>
     
 </body>
 </html>
