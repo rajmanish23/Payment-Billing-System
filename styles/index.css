@@ -11,9 +11,13 @@ body {
     font-size: 50px;
     margin-bottom: 100px;
     background-color: #0F4C75;
-    padding: 1.5%;
+    padding: 1%;
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
+}
+
+.container-fluid img {
+    height: 100px;
 }
 
 .container {
@@ -70,13 +74,14 @@ body {
     margin-bottom: 1%;
     border-radius: 20px;
     height: 55px;
+    /* padding-top: auto; */
 }
 
 .container a {
     color: white;
 }
 
-.password-box, .username-box label {
+/* .password-box, .username-box label {
     padding-left: auto;
     padding-right: auto;
-}
+} */

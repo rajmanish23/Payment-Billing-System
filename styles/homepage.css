@@ -1,61 +1,37 @@
-#bg1 {
-    background: linear-gradient(rgba(4, 9, 30, 0.6), rgba(4, 9, 30, 0.6)), url("/assets/homepage_BG.jpg");
-    background-position: center;
+body {
+    background-color: #b3bec5;
 }
 
-.main {
-    margin: 40px 20% 0 20%;
-    padding: 10px 0 90px 0;
-    border: 1px solid black;
-    border-radius: 10px;
-    background-color: rgba(225, 225, 225, 0.7);
+#profile {
+    text-align: right;
 }
 
-.header {
-    margin-left: 24%;
+.container-fluid {
+    margin-bottom: 100px;
+    background-color: #0F4C75;
+    padding: 1.5%;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
 }
 
-* {
-    font-family: 'Lato', sans-serif;
+.container-fluid img {
+    height: 100px;
 }
 
-.heading {
-    background: none;
-    color: black;
-    font-size: 45px;
-    width: 100%;
-    margin: 50px 0 0 13px;
+.container {
+    padding: auto;
+    text-align: center;
+    background-color: #0F4C75;
+    width: 45%;
+    border-radius: 20px;
+    color: white;
 }
 
-.center {
-    margin: 13% 0 25px 35%;
-}
-
-#bt1 {
-    border: 1px solid #9fffbc;
-    font-size: 18px;
-    background-color: #ecf0f1;
-    border-radius: 10px;
-    padding: 10px 80px 10px 55px;
-    margin-top: 10px;
-}
-
-#bt1:hover {
-    background-color: #9fffbc;
-    cursor: pointer;
-    transition: 0.2s;
-}
-
-#bt2 {
-    margin-top: 50px;
-    background: #ecf0f1;
-    border: 1px solid #9fffbc;
-    font-size: 18px;
-    border-radius: 10px;
-    padding: 10px 52px 10px 33px;
-}
-
-#bt2:hover {
-    background-color: #9fffbc;
-    transition: 0.2s;
+.btn {
+    font-size: large;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    border-radius: 20px;
+    height: 55px;
+    /* padding-top: auto; */
 }
