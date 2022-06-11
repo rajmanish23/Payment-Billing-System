@@ -17,9 +17,49 @@
                 <img src="/assets/logo.png" alt="Biller Bee Logo">
             </div>
             <div class="col" id="header">
-                <img src="/assets/invoice-header.png" alt="Invoice Header">
+                INVOICE ENTRY
             </div>
         </div>
+    </div>
+
+    <div class="container-fluid" id="cust-info">
+        <form action="">
+            <!-- add JS function to get details -->
+            <div class="row" id="cust-name-box">
+                
+                <div class="col">
+                        <!-- <label for="custName">Customer Name : </label> -->
+                        <input type="text" id="custName" name="custName" placeholder="Customer Name">
+                </div>
+                <div class="col">
+                        <!-- <label for="custPhNum">Customer Phone Number : </label> -->
+                        <input type="tel" id="custPhNum" name="custPhNum" placeholder="Customer Phone Number">
+                </div>
+            </div>
+        </form>
+    </div>
+    
+    <!-- adding items to bill -->
+    <div id="billDetails" class="container">
+        <form id="innerBillDetails">
+            <div id="innerBillElement">
+                <label for="itemId">Item Code </label>
+                <input type="number" id="itemId" name="itemId">
+                <label for="itemName">Item </label> <!-- JS function fetches item name from item code and puts it here -->
+                <input type="text" id="itemName" name="itemName">
+                <label for="itemPrice"> Price </label>
+                <input type="number" id="itemPrice" name="itemPrice">
+                <label for="itemQty">Quantity </label>
+                <input type="number" id="itemQty" name="itemQty">
+            </div>
+            <br>
+        </form>
+        <button id="addBillItem">Add</button>
+    </div>
+    
+    <div class="footerSection">
+        <p id="billTotal">Total Bill </p>
+        <button id="submitDetails">Proceed</button>
     </div>
 </body>
 </html>

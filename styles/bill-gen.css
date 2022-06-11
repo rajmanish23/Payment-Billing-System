@@ -2,18 +2,78 @@ body {
     background-color: #b3bec5;
 }
 
-.container-fluid {
-    margin-bottom: 100px;
+#top-section {
+    margin-bottom: 10px;
     background-color: #0F4C75;
-    padding: 1.5%;
+    padding: 10px;
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
 }
 
-.container-fluid img {
+#cust-info {
+    text-align: right;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#cust-info input {
+    border: none;
+    border-bottom: 1px solid rgb(179, 179, 179);
+    background: transparent;
+    outline: none;
+    /* outline-color: gray; */
+    height: 40px;
+    width: auto;
+    color: white;
+    font-size: 16px;
+}
+
+#cust-name-box {
+    width: auto;
+    margin-left: 70%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    padding-right: 2%;
+    background-color: #3282B8;
+    border-radius: 20px;
+    color: white;
+}
+
+#top-section img {
     height: 100px;
 }
 
 #header {
     text-align: right;
+}
+
+#billDetails {
+    text-align: center;
+    background-color: #0F4C75;
+    width: 60%;
+    border-radius: 20px;
+    color: white;
+}
+
+#innerBillElement {
+    width: auto;
+    margin-top: 7%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    padding-right: 2%;
+    background-color: #3282B8;
+    border-radius: 20px;
+    color: white;
+}
+
+#innerBillElement input {
+    border: none;
+    border-bottom: 1px solid rgb(179, 179, 179);
+    background: transparent;
+    outline: none;
+    /* outline-color: gray; */
+    height: 40px;
+    width: auto;
+    color: white;
+    font-size: 16px;
 }
