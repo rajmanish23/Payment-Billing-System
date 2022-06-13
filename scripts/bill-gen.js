@@ -1,7 +1,7 @@
 // adds an empty input for next bill item
 document.getElementById("addBillItem").addEventListener("click", function () {
     document.getElementById("innerBillDetails").innerHTML += `
-         <div class="innerBillElement">
+         <div id="innerBillElementNew">
             <label for="itemId">Item Code </label>
             <input type="number" id="itemId" name="itemId">
             <label for="itemName">Item </label>
