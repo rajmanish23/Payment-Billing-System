@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@600&display=swap');
+
+body {
+    background-color: #b3bec5;
+}
+
+.container-fluid {
+    font-family: 'Comfortaa', cursive;
+    color: white;
+    text-align: center;
+    font-size: 50px;
+    margin-bottom: 100px;
+    background-color: #0F4C75;
+    padding: 1%;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.container-fluid img {
+    height: 100px;
+}
+
+.container {
+    text-align: center;
+    background-color: #0F4C75;
+    width: 45%;
+    border-radius: 20px;
+    color: white;
+}
+
+.avatar {
+    width: 30%;
+    margin-top: 7%;
+    margin-bottom: 5%;
+}
+
+.container label {
+    margin-right: 1%;
+}
+
+.password-box input, .username-box input {
+    border: none;
+    border-bottom: 1px solid rgb(179, 179, 179);
+    background: transparent;
+    outline: none;
+    /* outline-color: gray; */
+    height: 40px;
+    width: auto;
+    color: white;
+    font-size: 16px;
+}
+
+.username-box, .password-box {
+    width: auto;
+    margin-left: 8%;
+    margin-right: 8%;
+    margin-bottom: 5%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    background-color: #3282B8;
+    border-radius: 20px;
+}
+
+.btn {
+    font-size: large;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    border-radius: 20px;
+    height: 55px;
+}
+
+.container a {
+    color: white;
+}

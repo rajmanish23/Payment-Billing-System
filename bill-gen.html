@@ -1,46 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title>Bill Generator</title>
-        <script src="/scripts/bill-gen.js" defer></script>
-        <link rel="stylesheet" href="/styles/bill-gen.css">
-    </head>
-    <body>
-        <div class="headerSection">
-            <h1 id="invoiceHeader">Invoice Entry</h1>
-            <p id="billNum">Bill Number </p>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generate Bill</title>
+    <link rel="stylesheet" href="/assets/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="/styles/bill-gen.css">
+    <script src="assets/bootstrap/js/bootstrap.bundle.js" defer></script>
+    <script src="/scripts/bill-gen.js" defer></script>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+<body>
+    <div class="container-fluid" id="top-section">
+        <div class="row">
+            <div class="col" id="logo">
+                <img src="/assets/logo.png" alt="Biller Bee Logo">
+            </div>
+            <div class="col" id="header">
+                INVOICE ENTRY
+            </div>
         </div>
-        
-        <!-- gets customer information -->
-        <div class="custInfo">
-            <form action=""> <!-- add JS function to get details -->
-                <label for="custName">Customer Name </label>
-                <input type="text" id="custName" name="custName">
-                <label for="custPhNum">Customer Phone Number </label>
-                <input type="number" id="custPhNum" name="custPhNum">
-            </form>
-        </div>
-        
-        <!-- adding items to bill -->
-        <div class="billDetails">
-            <form id="innerBillDetails">
-                <div class="innerBillElement">
-                    <label for="itemId">Item Code </label>
-                    <input type="number" id="itemId" name="itemId">
-                    <label for="itemName">Item </label> <!-- JS function fetches item name from item code and puts it here -->
-                    <input type="text" id="itemName" name="itemName">
-                    <label for="itemPrice"> Price </label>
-                    <input type="number" id="itemPrice" name="itemPrice">
-                    <label for="itemQty">Quantity </label>
-                    <input type="number" id="itemQty" name="itemQty">
+    </div>
+
+    <div class="container-fluid" id="cust-info">
+        <form action="">
+            <!-- add JS function to get details -->
+            <div class="row" id="cust-name-box">
+                
+                <div class="col">
+                        <!-- <label for="custName">Customer Name : </label> -->
+                        <input type="text" id="custName" name="custName" placeholder="Customer Name">
                 </div>
-            </form>
-            <button id="addBillItem">Add</button>
+                <div class="col">
+                        <!-- <label for="custPhNum">Customer Phone Number : </label> -->
+                        <input type="tel" id="custPhNum" name="custPhNum" placeholder="Customer Phone Number">
+                </div>
+            </div>
+        </form>
+    </div>
+    
+    <!-- adding items to bill -->
+    <div id="billDetails" class="container">
+        <form id="innerBillDetails">
+            <div id="innerBillElement">
+                <label for="itemId">Item Code </label>
+                <input type="number" id="itemId" name="itemId">
+                <label for="itemName">Item </label> <!-- JS function fetches item name from item code and puts it here -->
+                <input type="text" id="itemName" name="itemName">
+                <label for="itemPrice"> Price </label>
+                <input type="number" id="itemPrice" name="itemPrice">
+                <label for="itemQty">Quantity </label>
+                <input type="number" id="itemQty" name="itemQty">
+            </div>
+            <br>
+        </form>
+        <button type="button" class="btn btn-primary" id="addBillItem">
+            <span class="material-symbols-outlined">
+                add_circle
+            </span>
+        </button>
+    </div>
+    
+    <div class="container-fluid" id="footer-section">
+        <div class="row">
+            <div class="col" id="billTotal">TOTAL BILL : </div>
+            <div class="col" id="submit-button-div">
+                <button type="button" class="btn btn-primary" id="submitDetails">Proceed</button>
+            </div>
         </div>
-        
-        <div class="footerSection">
-            <p id="billTotal">Total Bill </p>
-            <button id="submitDetails">Proceed</button>
-        </div>
-    </body>
+    </div>
+</body>
 </html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Bill Generator</title>
+        <script src="/scripts/bill-gen.js" defer></script>
+        <link rel="stylesheet" href="/old-backup/OLD_bill-gen.css">
+    </head>
+    <body>
+        <div class="headerSection">
+            <h1 id="invoiceHeader">Invoice Entry</h1>
+            <p id="billNum">Bill Number </p>
+        </div>
+        
+        <!-- gets customer information -->
+        <div class="custInfo">
+            <form action=""> <!-- add JS function to get details -->
+                <label for="custName">Customer Name </label>
+                <input type="text" id="custName" name="custName">
+                <label for="custPhNum">Customer Phone Number </label>
+                <input type="number" id="custPhNum" name="custPhNum">
+            </form>
+        </div>
+        
+        <!-- adding items to bill -->
+        <div class="billDetails">
+            <form id="innerBillDetails">
+                <div class="innerBillElement">
+                    <label for="itemId">Item Code </label>
+                    <input type="number" id="itemId" name="itemId">
+                    <label for="itemName">Item </label> <!-- JS function fetches item name from item code and puts it here -->
+                    <input type="text" id="itemName" name="itemName">
+                    <label for="itemPrice"> Price </label>
+                    <input type="number" id="itemPrice" name="itemPrice">
+                    <label for="itemQty">Quantity </label>
+                    <input type="number" id="itemQty" name="itemQty">
+                </div>
+                <br>
+            </form>
+            <button id="addBillItem">Add</button>
+        </div>
+        
+        <div class="footerSection">
+            <p id="billTotal">Total Bill </p>
+            <button id="submitDetails">Proceed</button>
+        </div>
+    </body>
+</html>

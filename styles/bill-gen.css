@@ -1,35 +1,136 @@
 body {
-    background-color: azure;
-    padding: 0px;
+    background-color: #b3bec5;
 }
 
-.headerSection {
-    background-color: #CC3D38;
-    margin: 0%;
+#top-section {
+    margin-bottom: 10px;
+    background-color: #0F4C75;
+    padding: 10px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+#cust-info {
+    text-align: right;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#cust-info input {
+    border: none;
+    border-bottom: 1px solid rgb(179, 179, 179);
+    background: transparent;
+    outline: none;
+    height: 40px;
+    width: auto;
+    color: white;
+    font-size: 16px;
+}
+
+#cust-name-box {
+    width: auto;
+    margin-left: 70%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    padding-right: 2%;
+    background-color: #3282B8;
+    border-radius: 20px;
+    color: white;
+}
+
+#top-section img {
+    height: 100px;
+}
+
+#header {
+    text-align: right;
+}
+
+#billDetails {
     text-align: center;
-    padding: 0.5%;
-    border-radius: 0cm;
-}
-
-.custInfo {
-    text-align: end;
-    margin: 1%;
-}
-
-.billDetails {
-    text-align: center;
-    
-}
-
-#innerBillDetails {
-    padding: 5%;
-}
-.innerBillDetails {
-    margin: 5%;
+    background-color: #0F4C75;
+    width: 60%;
+    border-radius: 20px;
+    color: white;
     padding: 1%;
 }
 
-.footerSection {
-    background-color: #CC3D38;
-    padding: 0.5%;
+#innerBillDetails {
+    width: auto;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 20px;
+    /* padding-bottom: 10px; */
+    background-color: #3282B8;
+    border-radius: 20px;
+    color: white;
+}
+
+#innerBillElement input,
+#innerBillElementNew input {
+    border: none;
+    border-bottom: 1px solid rgb(179, 179, 179);
+    background: transparent;
+    outline: none;
+    /* outline-color: gray; */
+    height: 40px;
+    width: auto;
+    color: white;
+    font-size: 16px;
+}
+
+#innerBillElementNew {
+    border-top: 3px solid #68a1c7;
+    padding-top: 10px;
+}
+
+.material-symbols-outlined {
+    font-variation-settings:
+        'FILL'0,
+        'wght'400,
+        'GRAD'0,
+        'opsz'48
+}
+
+#addBillItem {
+    width: 20%;
+    margin-top: 20px;
+    padding-top: 11px;
+}
+
+#footer-section {
+    margin-top: 30px;
+    background-color: #0F4C75;
+    padding: 10px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    position: fixed;
+    bottom: 0;
+}
+
+#submit-button-div {
+    text-align: right;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#submitDetails {
+    width: 20%;
+    margin-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#billTotal {
+    font-size: 48px;
+    text-align: left;
+    padding-left: 20px;
+    color: white;
+}
+
+#header {
+    font-size: 55px;
+    text-align: right;
+    padding-right: 20px;
+    color: white;
 }
