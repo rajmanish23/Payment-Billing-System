@@ -42,34 +42,38 @@
     </div>
     
     <!-- adding items to bill -->
-    <div id="billDetails" class="container">
-        <form id="innerBillDetails">
-            <div id="innerBillElement">
-                <label for="itemId">Item Code </label>
-                <input type="number" id="itemId" name="itemId">
-                <label for="itemName">Item </label> <!-- JS function fetches item name from item code and puts it here -->
-                <input type="text" id="itemName" name="itemName">
-                <label for="itemPrice"> Price </label>
-                <input type="number" id="itemPrice" name="itemPrice">
-                <label for="itemQty">Quantity </label>
-                <input type="number" id="itemQty" name="itemQty">
+    <form>
+        <div id="billDetails" class="container">
+            <div id="innerBillDetails">
+                <div id="innerBillElement">
+                    <label for="itemId">Item Code </label>
+                    <input type="number" id="itemId" name="itemId">
+                    <label for="itemName">Item </label> <!-- JS function fetches item name from item code and puts it here -->
+                    <input type="text" id="itemName" name="itemName">
+                    <label for="itemPrice"> Price </label>
+                    <input type="number" id="itemPrice" name="itemPrice">
+                    <label for="itemQty">Quantity </label>
+                    <input type="number" id="itemQty" name="itemQty">
+                </div>
+                <br>
             </div>
-            <br>
-        </form>
-        <button type="button" class="btn btn-primary" id="addBillItem">
-            <span class="material-symbols-outlined">
-                add_circle
-            </span>
-        </button>
-    </div>
-    
-    <div class="container-fluid" id="footer-section">
-        <div class="row">
-            <div class="col" id="billTotal">TOTAL BILL : </div>
-            <div class="col" id="submit-button-div">
-                <button type="button" class="btn btn-primary" id="submitDetails">Proceed</button>
+            <button type="button" class="btn btn-primary" id="addBillItem" onclick="addBillItem()">
+                <span class="material-symbols-outlined">
+                    add_circle
+                </span>
+            </button>
+        </div>
+        
+        <div class="container-fluid" id="footer-section">
+            <div class="row">
+                <div class="col" id="billTotal">TOTAL BILL : </div>
+                <div class="col" id="submit-button-div">
+                    <button type="submit" class="btn btn-primary" id="submitDetails">Proceed</button>
+                </div>
             </div>
         </div>
-    </div>
+    </form>
 </body>
 </html>
+
+
